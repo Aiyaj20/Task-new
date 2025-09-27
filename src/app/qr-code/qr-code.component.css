@@ -1,0 +1,56 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #6d28d9;
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.login-btn {
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    background: #6d28d9;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 90%;
+    }
+}
+
+.auth-card {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #fff;
+    font-family: sans-serif;
+}

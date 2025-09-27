@@ -1,0 +1,86 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+}
+
+.price {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.features {
+    list-style: none;
+    font-size: smaller;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.features li {
+    margin-bottom: 5px;
+}
+
+.features li.disabled {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.login-btn {
+    margin-top: auto;
+    /* push button to bottom */
+    padding: 10px;
+    border: none;
+    background: #6d28d9;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 90%;
+    }
+}
+
+.badge {
+    font-size: 13px;
+    font-weight: 600;
+    background: #f3e7ff;
+    color: #7c3aed;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}

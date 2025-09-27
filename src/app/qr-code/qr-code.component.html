@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="mb-12" style="text-align: center;">
+        {{ plan.name }} <br> {{plan.price}}
+    </h2>
+    <div style="text-align: center;">(Valid for 30 trading days)</div>
+    <div class="pricing-cards">
+        <div class="pricing-card" style="text-align: center;">
+            <div class="auth-card">
+                <img [src]="plan.qrCodeDataURL" width="250" height="250" style="image-rendering: pixelated"
+                    alt="QR Code" />
+            </div>
+        </div>
+    </div>
+    <div class="pricing-cards">
+        <button class="login-btn" type="submit" (click)="Loginpage()">Confirm & Start</button>
+    </div>
+</div>
