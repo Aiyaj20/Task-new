@@ -2,7 +2,7 @@
     <div style="display: flex;justify-content: space-between;margin-bottom: 16px;">
         <button class="tab-btn" [class.active]="isLoginMode" (click)="toggleMode()">
             Log In
-        </button>
+        </button>&nbsp;
         <button class="tab-btn" [class.active]="!isLoginMode" (click)="toggleMode()">
             Sign Up
         </button>
@@ -15,7 +15,7 @@
                 <label>Phone:</label>
                 <div class="otp-input">
                     <input formControlName="phone" type="text" placeholder="Phone Number">
-                    <button type="button" (click)="sendOTP()">Send OTP</button>
+                    <button type="button" (click)="sendOTP()" style="font-size: 12px;">Send OTP</button>
                 </div>
             </div>
             <div class="form-group">
@@ -24,7 +24,7 @@
                     <input formControlName="otp" type="text" placeholder="Enter OTP">
                 </div>
             </div>
-            <button class="login-btn" type="submit">Log In</button>
+            <button class="login-btn" type="submit" style="font-size: 12px;">Log In</button>
         </form>
     </div>
 </div>
